@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+#loadingBar {
+    display: none;
+}
+
+#loadingBar div {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(0, 123, 255, 0.4); 
+    position: relative;
+}
+
+#loadingBarProgress {
+    width: 0%;
+    height: 100%;
+    background-color: #fff; 
+    transition: width 0.3s ease-in-out;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+
+#userContainer {
+    text-align: center;
+}
+
+#profileImage {
+    float: left;
+    margin-right: 20px;
+}
+
+#profileImage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#userContainer div {
+    max-width: 600px;
+}
+
+#userContainer h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#userContainer p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+#userContainer p.profile-link {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+}
+
+#userContainer p.profile-link:hover {
+    text-decoration: underline;
+}
+
+#repoContainer {
+    margin-top: 20px;
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.repo-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.repo-card {
+    flex: 1 0 calc(50% - 10px); 
+    max-width: calc(50% - 10px);
+    box-sizing: border-box; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease-in-out; 
+}
+.repo-card:hover {
+    border-color: #007bff; 
+    cursor: pointer;
+}
+
+.repo-card h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #007bff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.repo-card p {
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.repo-card .language-box {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+
+
+#paginationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-secondary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
